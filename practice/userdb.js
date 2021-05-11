@@ -114,7 +114,7 @@ while(true){
         default:
             console.log('Wrong Input')
     }
-    if(user_input =='5'){
+    if(user_input =='6'){
         break
     }
 }
