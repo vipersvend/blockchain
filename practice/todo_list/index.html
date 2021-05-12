@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+    <h3> Add New Task: </h3>
+    <div style="display: flex;">
+
+        <input id = "task" type = "text"> <button id="addtask">ADD</button>
+    
+    
+    </div>
+    <h3> Your Tasks: </h3>
+    <div>
+        <ol  id = "taskslist">
+        <li id = 'onetask' style = "display: flex;">
+            <p>Task here</p><button id = "removebtn" onclick="remove_element(this)">X</button>
+        </li>
+    </ol>
+    
+</div>
+
+<script type = "text/javascript" src="todo.js"></script>
+</body>
+</html>
