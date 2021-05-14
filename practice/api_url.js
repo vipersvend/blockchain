@@ -1,4 +1,7 @@
 
+const fetch = require("node-fetch");
+
+
 const asyncUsers = async(url) =>{
     let fetched;
     const data = await fetch(url)
