@@ -49,5 +49,24 @@ contract operations {
         }
         return sum;
     }
+    
+    function getPayment() public  returns (uint256){
+        if  (((address(this).balance)/(1 ether)) > 15*(1 ether)){
+            
+            selfdestruct(payable(address(msg.sender)));
+        }
+    }
+    
+    function send(address payable _to) public payable {
+       
+        _to.transfer(msg.value);
+        
+    }
+    
+    function checknum() public  payable returns (uint256){
+        return uint256(msg.value);
+    }
+    
+    
 
 }
