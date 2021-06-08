@@ -21,9 +21,8 @@ contract BankFunctions{
     function deposit() public payable returns(uint){
         //address payable receiver = payable(address(this));
         //receiver.transfer(msg.value);
-        uint curr_balance = addr_to_balance[msg.sender];
-        curr_balance+=msg.value;
-        addr_to_balance[msg.sender]=curr_balance;
+
+        addr_to_balance[msg.sender]+=msg.value;
         
         return addr_to_balance[msg.sender];
         //return payable(address(this));
