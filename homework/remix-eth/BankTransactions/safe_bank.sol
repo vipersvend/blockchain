@@ -51,7 +51,7 @@ contract BankFunctions{
         for(uint i = 1 ; i<=account_counter; i++) {
             address payable address_recv = payable(id_to_addr[i]);
             address_recv.transfer(addr_to_balance[address_recv]);
-            transferred ==1;
+            transferred +=1;
         }
         return transferred;
     }
